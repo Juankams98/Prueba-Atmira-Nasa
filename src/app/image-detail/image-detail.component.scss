@@ -1,0 +1,16 @@
+a{
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+}
+.detail-container{
+    font-family: 'Arial', sans-serif;
+    .detail-title{
+        font-weight: bold;
+        font-size: 30px
+    }
+    width:80%;
+    display:inline-block;
+    text-align:center;
+    margin: 0 10%;
+}

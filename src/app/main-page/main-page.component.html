@@ -1,0 +1,16 @@
+ <h1>
+   Astronomy Picture of the day
+   {{formatDate(startDate)}}
+   to
+   {{formatDate(endDate)}}
+   - Juan Carlos Muñoz Soto
+ </h1>
+
+ <ng-container *ngIf="imageList.length === 0">
+   <p class="loading-text">Loading images...</p>
+ </ng-container>
+ <ng-container *ngIf="imageList.length === 6">
+   <ng-container *ngFor="let image of imageList">
+     <app-image [image]="image" (click)="goToImageDetail(image)"></app-image>
+   </ng-container>
+ </ng-container>
